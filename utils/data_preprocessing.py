@@ -1,5 +1,6 @@
 '''
-    This part of code is to generate the action unit for images and store into a .csv file with the same name as input image.
+    This part of code is to generate the action unit for images and store into a .csv file with
+    the same name as input image.
 '''
 import os
 import csv

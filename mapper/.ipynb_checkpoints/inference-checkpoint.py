@@ -1,16 +1,12 @@
 import os
-from argparse import Namespace
 
 import torchvision
-import numpy as np
 import torch
 from torch import nn
 from torch.utils.data import DataLoader
 import sys
-import time
 
-from tqdm import tqdm
-import glob, time, dlib, matplotlib.pyplot as plt, numpy as np
+import dlib
 
 sys.path.append(".")
 sys.path.append("../")
@@ -19,7 +15,7 @@ sys.path.append("/hy-tmp/StyleCLIP-main_prev/utils")
 
 from mapper.datasets.latents_dataset import CustomizedDataset
 
-from mapper.inference_opts import TrainOptions
+from mapper.inference.inference_opts import TrainOptions
 from mapper.styleclip_mapper import AU2W_Mapper
 from utils.au_extractor_new import au_extract
 

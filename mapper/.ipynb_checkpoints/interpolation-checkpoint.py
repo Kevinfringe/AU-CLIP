@@ -1,14 +1,9 @@
 import os
-from argparse import Namespace
 
 import torchvision
-import numpy as np
 import torch
 from torch.utils.data import DataLoader
 import sys
-import time
-
-from tqdm import tqdm
 
 sys.path.append(".")
 sys.path.append("../")
@@ -17,7 +12,7 @@ sys.path.append("/hy-tmp/StyleCLIP-main_prev/utils")
 
 from mapper.datasets.latents_dataset import CustomizedDataset
 
-from mapper.interpolation_opts import TrainOptions
+from mapper.inference.interpolation_opts import TrainOptions
 from mapper.styleclip_mapper import AU2W_Mapper
 
 log_dir = "./interpolation_results_increment_wholeau/"
