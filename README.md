@@ -62,7 +62,7 @@ and [test set](https://drive.google.com/file/d/1j7RIfmrCoisxx3t-r-KC02Qc8barBecr
 Place these two .pt files into root directory.
 
 ### Auxiliary Data
-- Place original [train images]() and [test images](https://drive.google.com/file/d/188j9omYpRWmtb5VwlNBphNzD3FvCjruA/view?usp=sharing) into `./mapper/training`.
+- Place original [train images](https://drive.google.com/file/d/1h9G7vg-5QyYGIOPt0ymFYfzxF8YT0fFm/view?usp=sharing) and [test images](https://drive.google.com/file/d/188j9omYpRWmtb5VwlNBphNzD3FvCjruA/view?usp=sharing) into `./mapper/training`.
 
 - The action unit vector for [train set](https://drive.google.com/file/d/17OirqDdeE8neU7cJYGJKjTbWYCnqm_5Q/view?usp=sharing) and [test set](https://drive.google.com/file/d/1NvtXZJEvikQkXTHn_svAoc14mPwlQf3T/view?usp=sharing) extracted via [GraphAU](https://github.com/CVI-SZU/ME-GraphAU/tree/main) should be placed into `./mapper/training`.
 
@@ -70,7 +70,9 @@ Place these two .pt files into root directory.
 facial expression categories, which is achieved via a facial expression classification network -- [RMN](https://github.com/phamquiluan/ResidualMaskingNetwork). Manually download it and place it into `./mapper`.
 
 ## Train
-To set the train options, please refer to `./mapper/options/train_options.py`.
+- Before training, user needs to manually download script of [graphyAU](https://drive.google.com/file/d/18PxsA8lMG0TO5HiQMkI9-xKRoXHNhaz5/view?usp=sharing) and its [pretrained weights](https://drive.google.com/file/d/1wQdNJMa0jV4_5n-jVoTiqPXT2kE6Rh7m/view?usp=sharing). Put them all into `./utils`.
+
+- To set the train options, please refer to `./mapper/options/train_options.py`.
 
 Please check the path of corresponding variable as mentioned above.
 
@@ -81,6 +83,10 @@ For the best model, the options is set as the default values in train_options.py
 The scripts for different type of inference and metric calculation are in `./mapper/inference`.
 
 Please check the path in option file, and run the script directly.
+
+The pretrained weights of our best model can be downloaded [here](https://drive.google.com/file/d/1D-r9HjfgqKoaTTiLv65H1avM6ckZi4lG/view?usp=sharing).
+
+Place it under any directories, and modify the path in corresponding option files.
 
 ## Result Visualization
 
@@ -97,5 +103,6 @@ Please check the path in option file, and run the script directly.
 - Our code is highly inspired by [StyleCLIP](https://github.com/orpatashnik/StyleCLIP).
 - We use pretrained GAN inversion model [e4e](https://github.com/omertov/encoder4editing) to get the w+ code
 of original image.
-  - We use pretrained action unit regression network -- [ME-GraphAU](https://github.com/CVI-SZU/ME-GraphAU/tree/main) to extract action unit values.
+  
+- We use pretrained action unit regression network -- [ME-GraphAU](https://github.com/CVI-SZU/ME-GraphAU/tree/main) to extract action unit values.
     
