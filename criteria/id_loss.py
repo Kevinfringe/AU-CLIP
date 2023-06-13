@@ -1,3 +1,7 @@
+'''
+    This part of code is to calculate ID loss.
+    Borrowed from StyleCLIP original code.
+'''
 import torch
 from torch import nn
 

@@ -1,3 +1,7 @@
+'''
+    Original mapper code from styleCLIP.
+'''
+
 import torch
 from torch import nn
 from torch.nn import Module

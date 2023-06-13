@@ -1,5 +1,6 @@
 """
     This part of code is to calculate the action unit loss between source image and generated image.
+    Note: This file is abandoned since the failure of action unit intensity value usage.
 """
 import sys
 import os

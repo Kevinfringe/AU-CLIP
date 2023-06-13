@@ -1,3 +1,6 @@
+'''
+    Customized latent mapper by increasing the number of layers and dimension of each layer.
+'''
 import torch
 from torch import nn
 from torch.nn import Module

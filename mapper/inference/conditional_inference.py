@@ -1,3 +1,6 @@
+'''
+    This file is to generate image with desired target image.
+'''
 import os
 
 import torchvision
